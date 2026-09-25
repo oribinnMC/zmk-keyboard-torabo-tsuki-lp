@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -30,11 +29,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                         &trans         &trans                  &trans                   &trans       &trans           &trans
-&trans  &trans  &trans  &trans     &trans     &trans                         &kp AT_SIGN    &kp SINGLE_QUOTE        &kp GRAVE                &kp EQUAL    &kp DOLLAR       &trans
-&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans         &kp HASH       &mt LEFT_BRACKET RSHFT  &mt RSHFT RIGHT_BRACKET  &kp MINUS    &kp ASTERISK     &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &kp BACKSLASH  &kp AMPERSAND  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp PERCENT  &mt RSHFT CARET  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans         &trans         &trans                  &trans                   &trans       &trans           &trans
+&trans  &trans                     &trans           &trans           &trans           &trans                                   &trans         &trans                  &trans                   &trans       &trans           &trans
+&trans  &kp ESCAPE                 &kp TAB          &kp KP_NUMBER_7  &kt KP_NUMBER_8  &kp KP_NUMBER_9                          &kp AT_SIGN    &kp SINGLE_QUOTE        &kp GRAVE                &kp EQUAL    &kp DOLLAR       &trans
+&trans  &kp EQUAL                  &kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans   &trans         &kp HASH       &mt LEFT_BRACKET RSHFT  &mt RSHFT RIGHT_BRACKET  &kp MINUS    &kp ASTERISK     &trans
+&trans  &mt LSHFT INTERNATIONAL_3  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DEL  &kp BACKSLASH  &kp AMPERSAND  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp PERCENT  &mt RSHFT CARET  &trans
+&trans  &trans                     &trans           &trans           &trans           &trans           &trans   &trans         &trans         &trans                  &trans                   &trans       &trans           &trans
             >;
         };
 
