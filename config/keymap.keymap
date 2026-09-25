@@ -13,6 +13,11 @@
             key-positions = <28 29>;
             layers = <2>;
         };
+
+        Hold_Mouse {
+            bindings = <&to 3>;
+            key-positions = <45 47>;
+        };
     };
 
     keymap {
@@ -50,11 +55,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans   &trans   &trans        &trans        &trans                      &trans          &trans          &trans         &trans           &trans      &trans
-&trans  &kp F1   &kp F2   &kp F3        &kp F4        &kp F5                      &kp HOME        &kp PG_UP       &kp PAGE_DOWN  &kp END          &kp ESCAPE  &trans
-&trans  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10     &trans  &trans  &kp TAB         &mkp LCLK       &mkp MCLK      &mkp RCLK        &kp TAB     &trans
-&trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &to 3   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP   &msc SCRL_RIGHT  &to 0       &trans
-&trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans          &trans          &trans         &trans           &trans      &trans
+&trans  &trans   &trans   &trans        &trans        &trans                      &trans          &trans        &trans          &trans           &trans      &trans
+&trans  &kp F1   &kp F2   &kp F3        &kp F4        &kp F5                      &kp HOME        &kp PG_UP     &kp PAGE_DOWN   &kp END          &kp ESCAPE  &trans
+&trans  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10     &trans  &trans  &kp TAB         &mkp LCLK     &mkp MCLK       &mkp RCLK        &kp TAB     &trans
+&trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &to 0       &trans
+&trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans          &trans        &trans          &trans           &trans      &trans
             >;
         };
     };
